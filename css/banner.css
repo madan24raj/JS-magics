@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+  
+ 
+}
+
+
+/* Container */
+#container {
+    position: relative;
+    width: 1080px;
+    height: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#card2Image
+{
+    position: absolute;
+    left: 150px;
+    top: 55px;
+    width: 383px;
+    height: 250px;
+    opacity: 0;
+    transform: scale(0);
+}
+#gradient{
+   position: absolute;
+   width: 500px;
+   height: 300px;
+   top: 0px;
+   left: 114px;
+   overflow: hidden;
+   z-index: 1;
+}
+#logo{
+    opacity:0;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 300px;
+        top: 110px;
+}
+#shine{
+       position: absolute;
+    background: rgba(255, 255, 255, 0.23);
+    width: 2px;
+    height: 460px;
+    opacity: 0.25;
+    top: 120px;
+    left: -355px;
+    transform: rotate(-55deg);
+    transform-origin: top;
+    z-index: 1;
+    box-shadow: -10px 4px 20px 20px #fff;
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
+
+.transitions-1 {
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -ms-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+}
+.transitions-2 {
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+.scale1_1{
+     -webkit-transform: scale(1) rotateY(360deg) !important;
+     -moz-transform: scale(1) !important;
+     -ms-transform: scale(1) !important;
+     -o-transform: scale(1) !important;
+     transform: scale(1) rotateY(360deg) !important;
+}
+.rotate{
+         -webkit-transform: rotateY(20deg) !important;
+         -moz-transform: rotateY(20deg) !important;
+         -ms-transform: rotateY(20deg) !important;
+         -o-transform: rotateY(20deg) !important;
+         transform: rotateY(20deg) !important;
+}
+
+.scale1 {
+    -webkit-transform: scale(1.5) rotateY(225deg) !important;
+    -moz-transform: scale(1.5) !important;
+    -ms-transform: scale(1.5) !important;
+    -o-transform: scale(1.5) !important;
+    transform: scale(1.5) rotateY(560deg) !important;
+}
+
+.logo_animation{
+    border: 2px solid;
+    border-radius: 60px;
+    box-shadow: 0px 0px 20px 4px #802415;
+}
+
