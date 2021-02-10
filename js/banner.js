@@ -1,9 +1,11 @@
 "use strict";
-var card2Image, logo,copy,starttime=0,shine;
+var card2Image, logo,copy,starttime=0,shine,logoText,wand;
 function onInit(){
     card2Image = document.getElementById("card2Image");
     logo = document.getElementById("logo");
     shine = document.getElementById("shine");
+    logoText = document.getElementById("logo-text");
+        wand = document.getElementById("wand");
   
     starttime += 1000;
     setTimeout(function () {
@@ -18,14 +20,23 @@ function onInit(){
 
     starttime += 100;
     setTimeout(function () {
-      logo.classList = "transitions-1 scale1_1 fade-in";
+      logo.classList = "transitions-1 scale1 fade-in";
     }, starttime);
 
       starttime += 100;
       setTimeout(function () {
-        logo.classList = "transitions-2 fade-in logo_animation";
+        logo.classList = "transitions-2 scale1_1 fade-in logo_animation";
       }, starttime);
 
+         starttime += 100;
+         setTimeout(function () {
+           logoText.classList = "transitions-1 scale_1 fade-in ";
+         }, starttime);
+
+               starttime += 500;
+               setTimeout(function () {
+                 wand.classList = "transitions-1 scalex_1 fade-in ";
+               }, starttime);
     
     starttime += 500;
     setTimeout(function () {
